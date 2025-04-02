@@ -1,0 +1,42 @@
+.cabecalho{
+    background-color: darkorchid;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: antiquewhite;
+    padding: 20px;
+}
+
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../imagens/Menu.snvg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display:inline-block;
+    
+    
+}
+.container__botao:checked~.containner__rotulo>.cabeçalho__menu-hamburguer{
+    background-image: url("/imagens/menu_aberto.png");
+}
+.container__botao:checked~.container__rotulo{
+    backg.cabecalho{
+        background-color: darkorchid;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }round: var(--azul-degrade);
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding: 1em;
+}
