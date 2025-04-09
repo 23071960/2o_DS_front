@@ -19,36 +19,41 @@
     
 }
 
-.pesquisa{
+.pesquisa {
     position: relative;
     width: 300px;
     height: 40px;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 20px;
     background-color: #f9f9f9;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-
+    display: flex;
+    align-items: center;
 }
-#campo_pesquisa{
-    width: 80%;
+
+#campo_pesquisa {
+    width: calc(100% - 40px);
     height: 100%;
-    border:none;
-    padding: 10px;
-    font: size 16px;
+    border: none;
+    padding: 10px 10px 10px 40px;
+    font-size: 16px;
     background-color: transparent;
+    box-sizing: border-box;
+}
 
+.lupa {
+    position: absolute;
+    left: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
 }
-.lupa{
- position: absolute;
- top:50%;
- right: 10px;
- transform: translate(-50%);
 
+.lupa img {
+    height: 100%;
+    width: auto;
 }
-.lupa img{
-    width:30px;
-    height: 30px;
-}
+
 .container__botao:checked~.containner__rotulo>.cabeçalho__menu-hamburguer{
     background-image: url("/imagens/menu_aberto.png");
 }
